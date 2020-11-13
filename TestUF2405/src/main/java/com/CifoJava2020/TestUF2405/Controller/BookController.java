@@ -17,12 +17,12 @@ public class BookController {
     BookService bookService;
 
 
-    @RequestMapping("")
+    @GetMapping("")
     public Iterable<Book> showBooks(){
         return bookService.showBooks();
     }
 
-    @RequestMapping("/insertBook")
+    @GetMapping("/insertBook")
     public Iterable<Book> insertBook(){
 
         bookService.addBook(Filling.bookList().get(0));
