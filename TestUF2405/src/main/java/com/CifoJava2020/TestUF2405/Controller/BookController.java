@@ -2,7 +2,6 @@ package com.CifoJava2020.TestUF2405.Controller;
 
 
 import com.CifoJava2020.TestUF2405.Model.Book;
-import com.CifoJava2020.TestUF2405.Model.Quote;
 import com.CifoJava2020.TestUF2405.Service.BookService;
 import com.CifoJava2020.TestUF2405.Utils.Filling;
 import org.springframework.beans.factory.annotation.Autowired;
