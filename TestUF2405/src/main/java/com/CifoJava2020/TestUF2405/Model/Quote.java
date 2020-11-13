@@ -1,5 +1,6 @@
 package com.CifoJava2020.TestUF2405.Model;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

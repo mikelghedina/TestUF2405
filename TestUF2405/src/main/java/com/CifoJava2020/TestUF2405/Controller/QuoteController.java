@@ -27,10 +27,16 @@ public class QuoteController {
 
     @GetMapping("/insertQuote")
     public Iterable<Quote> insertQuote(){
-        quoteService.addQuote(new Quote("All happy families are alike; each unhappy family is unhappy in its own way",
-                14,Filling.bookList().get(0)));
-        quoteService.addQuote(new Quote("As long as she thinks of a man, nobody objects to a woman thinking",
-                14,Filling.bookList().get(1)));
+        quoteService.addQuote(Filling.quoteList().get(0));
+        quoteService.addQuote(Filling.quoteList().get(1));
+
+        return showQuotes();
+    }
+
+    @GetMapping("/deleteQuote")
+    public Iterable<Quote> deleteQuote(){
+        //quoteService.deleteQuote();
+        //quoteService.deleteQuote();
 
         return showQuotes();
     }

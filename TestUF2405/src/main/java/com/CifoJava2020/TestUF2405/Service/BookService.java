@@ -26,8 +26,5 @@ public class BookService {
         System.out.println(book + " has been removed from the DB.");
     }
 
-    public Book findByTitle(String title){
-        return bookRepository.findByTitle(title);
-    }
 
 }
