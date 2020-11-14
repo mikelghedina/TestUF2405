@@ -8,11 +8,13 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
+//Quote Entity Class creating a ManyToOne relationship with quotes.
 @Entity
 @Table(name = "QUOTES")
 @Getter @Setter @NoArgsConstructor @ToString
 public class Quote  {
 
+    //Generates an automatic ID for every quote created.
     @Id
     @GeneratedValue
     private Long id;

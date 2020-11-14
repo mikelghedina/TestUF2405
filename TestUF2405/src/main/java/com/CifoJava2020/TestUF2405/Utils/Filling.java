@@ -7,15 +7,17 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.util.ArrayList;
 
-
+//Filling class to directly fill a list of quotes and books from requesting insertBook or insertQuote from Controllers.
 public class Filling {
 
+    //List of Books.
     public static ArrayList<Book> bookList(){
         ArrayList<Book> books = new ArrayList<>();
         books.add(new Book("Anna Karerina"));
         books.add(new Book("Orlando"));
         return books;
     }
+    //List of quotes.
     public static ArrayList<Quote> quoteList(){
         ArrayList<Quote> quotes = new ArrayList<>();
 

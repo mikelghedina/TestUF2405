@@ -10,11 +10,14 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.util.Set;
 
+
+//Book Entity Class creating a OneToMany relationship with quotes.
 @Entity
 @Table(name = "BOOKS")
 @Getter @Setter @NoArgsConstructor @ToString
 public class Book {
 
+    //Generates an automatic ID for every book created.
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
